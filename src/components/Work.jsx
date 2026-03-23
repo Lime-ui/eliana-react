@@ -6,12 +6,7 @@ export default function Work() {
             description: 'Web Design',
             link: '',
         },
-        {
-            name: 'Geo based app',
-            icon: './assets/work-2.png',
-            description: 'mobile app',
-            link: '',
-        },
+    
         {
             name: 'Photography site',
             icon: './assets/work-3.png',

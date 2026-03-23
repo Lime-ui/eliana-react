@@ -3,25 +3,20 @@ export default function Services() {
         {
             name: 'Web design',
             icon: './assets/web-icon.png',
-            description: 'Web development is the process of building, programming...',
+            description: 'Design and development of responsive, user-friendly websites that balance aesthetics and functionality, optimized for performance and seamless user experience across all devices.',
             link: '#',
         },
-        {
-            name: 'Mobile app',
-            icon: './assets/mobile-icon.png',
-            description: 'Web development is the process of building, programming...',
-            link: '#',
-        },
+
         {
             name: 'UI/ UX design',
             icon: './assets/ui-icon.png',
-            description: 'Web development is the process of building, programming...',
+            description: 'Designing user-centered digital experiences through research, wireframing, prototyping, and testing to ensure interfaces are both visually appealing and highly functional.',
             link: '#',
         },
         {
             name: 'Graphics design',
             icon: './assets/graphics-icon.png',
-            description: 'Web development is the process of building, programming...',
+            description: 'Crafting visually compelling designs for branding, marketing, and digital content, combining creativity with strategic communication to deliver impactful visuals.',
             link: '#',
         }
     ];
@@ -29,7 +24,7 @@ export default function Services() {
         <div id="services" className="w-full px-[12%] py-10 scroll-mt-20">
             <h4 className="text-center mb-2 text-lg font-Ovo">What i offer</h4>
             <h2 className="text-center text-5xl font-Ovo">My services</h2>
-            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.</p>
+            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I am a Junior frontend developer from Uganda, with 2 years of experience in multiple companies and indiviual projects.</p>
 
             <div className="grid grid-cols-auto gap-6 my-10">
                 {services.map((service) => (
