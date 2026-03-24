@@ -12,14 +12,9 @@ export default function Navbar() {
         sideMenuRef.current.style.transform = 'translateX(16rem)';
     }
     const toggleTheme = () => {
-
-        document.documentElement.classList.toggle('dark');
-
-        if (document.documentElement.classList.contains('dark')) {
-            localStorage.theme = 'dark';
-        } else {
-            localStorage.theme = 'light';
-        }
+        // Dark mode is enforced globally; theme switch is disabled.
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
     }
 
     useEffect(() => {
@@ -34,13 +29,11 @@ export default function Navbar() {
             }
         })
 
-        // -------- light mode and dark mode -----------
+        // -------- force dark mode only -----------
 
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+
     }, [])
 
     return (
